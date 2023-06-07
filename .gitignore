@@ -1,0 +1,35 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore logs
+*.log
+
+# Ignore dependency lock files
+yarn.lock
+package-lock.json
+
+# Ignore IDE and editor files
+.idea/
+.vscode/
+*.sublime-*
+*.swp
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore environment-specific files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore build output from various tools
+# Modify or add more rules as needed for your specific build setup
+/dist/
+/build/
+/out/
+/.next/
+/public/
+
+

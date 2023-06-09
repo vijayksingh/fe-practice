@@ -6,7 +6,8 @@ import Pagination from "./Pagination";
 import { filterRow } from "./helper";
 
 function Table({ columns, rows }) {
-  const [activePage, setActivePage] = useState(1); // State
+  let [activePage, setActivePage] = useState(1); // State
+  // 
   const [filter, setFilter] = useState({});
 
   const filteredRows = filterRow(filter, rows);
@@ -14,6 +15,8 @@ function Table({ columns, rows }) {
   const count = filteredRows.length;
   const rowsPerPage = 3;
   const totalPages = Math.ceil(count / rowsPerPage); // Derived State
+
+
   const calculatedRows = filteredRows.slice(
     // 9 - 12
     (activePage - 1) * rowsPerPage,
@@ -22,7 +25,6 @@ function Table({ columns, rows }) {
 
   const handleSearch = (value, column) => {
     setActivePage(1);
-
     if (value) {
       setFilter((filter) => ({
         ...filter,
@@ -43,7 +45,9 @@ function Table({ columns, rows }) {
         <thead>
           <tr>
             {columns.map((column) => {
-              return <th key={column.accessor}>{column.label}</th>;
+              return <th key={column.accessor}>
+                {column.label}
+                </th>;
             })}
           </tr>
           <tr>

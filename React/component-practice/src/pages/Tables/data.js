@@ -51,6 +51,7 @@ export const tableData = [
   { id: 8, name: null, age: null, is_manager: null, start_date: null },
 ];
 
+// Configuration for the table
 export const columns = [
   { accessor: "name", label: "Name" },
   { accessor: "age", label: "Age" },

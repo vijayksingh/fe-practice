@@ -4,8 +4,8 @@ export const filterRow = (filter, rows) => {
 
   return rows.filter((row) => {
     return Object.keys(filter).every((accessor) => {
-      const value = row[accessor];
-      const search = filter[accessor];
+      const value = row[accessor]; // Jack // jack
+      const search = filter[accessor]; // j
 
       if (typeof value === "string") {
         return value.toLowerCase().includes(search.toLowerCase());

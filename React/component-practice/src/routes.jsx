@@ -5,6 +5,7 @@ import TableDemo from "./pages/Tables/TableDemo";
 import App from "./App";
 import GridLight from "./pages/Grid-Light/GridLight";
 import AnalogClock from "./pages/Analog-Clock/AnalogClock";
+import MemoryGame from "./pages/MemoryGame/MemoryGame";
 
 const HomeRoute = () => {
   return (
@@ -14,6 +15,7 @@ const HomeRoute = () => {
         <Route path="/table" element={<TableDemo />} exact />
         <Route path="/grid" element={<GridLight />} exact />
         <Route path="/clock" element={<AnalogClock />} exact />
+        <Route path="/memory-game" element={<MemoryGame />} exact />
       </Routes>
     </Router>
   );

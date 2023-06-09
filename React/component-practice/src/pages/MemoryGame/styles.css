@@ -1,0 +1,27 @@
+.boardContainer {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid darkkhaki;
+  border-radius: 4px;
+}
+
+.cellBlank {
+  height: 100px;
+  width: 100px;
+  background-color: bisque;
+  border-radius: 4px;
+  border: 2px solid darkkhaki;
+}
+
+.emojiCell {
+  height: 100px;
+  width: 100px;
+  border-radius: 4px;
+  border: 2px solid darkkhaki;
+  font-size: 72px;
+}

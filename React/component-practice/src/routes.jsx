@@ -7,6 +7,7 @@ import GridLight from "./pages/Grid-Light/GridLight";
 import AnalogClock from "./pages/Analog-Clock/AnalogClock";
 import MemoryGame from "./pages/MemoryGame/MemoryGame";
 import NestedComment from "./pages/NestedComment/NestedComment";
+import InsertionSort from "./pages/Insertion-Sort/Insertion-Sort";
 
 const HomeRoute = () => {
   return (
@@ -18,6 +19,7 @@ const HomeRoute = () => {
         <Route path="/clock" element={<AnalogClock />} exact />
         <Route path="/memory-game" element={<MemoryGame />} exact />
         <Route path="/comments" element={<NestedComment />} exact />
+        <Route path="/insertion-sort" element={<InsertionSort />} exact />
       </Routes>
     </Router>
   );

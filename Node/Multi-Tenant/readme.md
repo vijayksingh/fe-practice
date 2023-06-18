@@ -39,3 +39,9 @@
 - Create getApplications service in `applications.service.ts`
 - Create schema for applications in `applications.schema.ts`
 
+**Roles**
+
+- Create default roles in `permissions.ts`
+- We are going to default roles for SUPER_ADMIN and USER
+
+

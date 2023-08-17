@@ -3,7 +3,6 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import App from "./App";
 import AnalogClock from "./pages/Analog-Clock/AnalogClock";
-import Game2048 from "./pages/Game-2048/Game";
 import GridLight from "./pages/Grid-Light/GridLight";
 import InsertionSort from "./pages/Insertion-Sort/Insertion-Sort";
 import MemoryGame from "./pages/MemoryGame/MemoryGame";
@@ -22,7 +21,6 @@ const HomeRoute = () => {
         <Route path="/memory-game" element={<MemoryGame />} exact />
         <Route path="/comments" element={<NestedComment />} exact />
         <Route path="/insertion-sort" element={<InsertionSort />} exact />
-        <Route path="/2048" element={<Game2048 />} exact />
         <Route path="/virtual-list" element={<DemoVirtualList />} exact />
       </Routes>
     </Router>

@@ -4,7 +4,6 @@
 
 */
 
-import React from "react";
 import "./style.css";
 
 function Bars({ count, red }) {
@@ -13,9 +12,10 @@ function Bars({ count, red }) {
   return (
     <div
       className="bar"
-      style={
-        ({ height: `${height}px`, backgroundColor: `${backgroundColor}` } )
-      }
+      style={{
+        "--height": `${height}px`,
+        backgroundColor: `${backgroundColor}`,
+      }}
     >
       {count}
     </div>

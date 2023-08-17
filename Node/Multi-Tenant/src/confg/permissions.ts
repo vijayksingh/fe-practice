@@ -1,7 +1,7 @@
 export const ALL_PERMISSIONS = [
   // users
   'users:roles:write', // Allow to add new roles
-  'users:roles:delete', // Allow to delete roles 
+  'users:roles:delete', // Allow to delete roles
 
   // posts
   'posts:write',
@@ -11,7 +11,7 @@ export const ALL_PERMISSIONS = [
 export const PERMISSIONS = ALL_PERMISSIONS.reduce((acc, permission) => {
   acc[permission] = permission
   return acc
-} , {} as Record<(typeof ALL_PERMISSIONS[number]), (typeof ALL_PERMISSIONS[number])>)
+}, {} as Record<(typeof ALL_PERMISSIONS[number]), (typeof ALL_PERMISSIONS[number])>)
 
 
 export const USER_ROLE_PERMISSIONS = [

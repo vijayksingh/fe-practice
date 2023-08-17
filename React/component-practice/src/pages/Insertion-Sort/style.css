@@ -2,6 +2,7 @@
   width: 50px;
   background-color: white;
   text-align: center;
+  height: var(--height);
   transition: height 1s linear;
 }
 

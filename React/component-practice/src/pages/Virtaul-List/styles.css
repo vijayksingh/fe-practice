@@ -1,0 +1,9 @@
+.virtual-list-container {
+  height: 400px;
+  overflow: auto;
+}
+
+.list-item {
+  height: 30px;
+  text-align: center;
+}

@@ -1,0 +1,32 @@
+.search-input {
+  padding: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.search-input input {
+  width: 320px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #ccc;
+  background: white;
+  border-radius: 8px;
+  color: darkkhaki;
+}
+
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.suggestions-list article {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.suggestions-list article:hover {
+  background-color: #f0f0f0;
+}

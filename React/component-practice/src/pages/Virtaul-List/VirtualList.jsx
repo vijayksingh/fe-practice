@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./styles.css";
+/* eslint-disable */
 
 const VirtualList = ({ items, itemHeight, renderRow }) => {
   const containerRef = useRef();
@@ -70,3 +71,15 @@ export function DemoVirtualList() {
 
   return <VirtualList items={items} itemHeight={30} renderRow={renderItem} />;
 }
+
+/* Approach 
+  1. Create a container with a fixed height and overflow-y: auto
+  2. Create a child container with a height equal to the total height of all the items
+  3. Render all the items in the child container
+  4. Position the child container absolutely
+  5. Add a scroll event listener to the container
+  6. Calculate the scroll position and divide it by the height of each item to get the index of the first visible item
+  7. Render only the visible items
+  8. Add a buffer of 2 items to the top and bottom of the visible items
+  9. Update the visible items when the scroll position changes
+*/

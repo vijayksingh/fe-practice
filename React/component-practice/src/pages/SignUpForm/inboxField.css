@@ -1,0 +1,36 @@
+.input-field {
+  position: relative;
+  margin: 10px 0;
+}
+
+.input-field label {
+  display: block;
+  font-weight: bold;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-field.focused input {
+  border-color: #007bff; /* Highlight color for focused field */
+}
+
+.input-field.visited input {
+  /* Optional styling for visited state */
+}
+
+.input-field .invalid {
+  border-color: #e74c3c; /* Error color for invalid input */
+}
+
+.input-field .error {
+  color: #e74c3c; /* Error color for error message */
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+}

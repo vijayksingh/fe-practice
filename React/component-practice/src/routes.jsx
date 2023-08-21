@@ -4,11 +4,13 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import App from "./App";
 import AnalogClock from "./pages/Analog-Clock/AnalogClock";
 import SearchBoxContainerDemo from "./pages/AutoSearch/SearchBoxContainer";
+import TicTacToe from "./pages/Games/TicTacToe/Game";
 import GridLight from "./pages/Grid-Light/GridLight";
 import InfiniteListContainer from "./pages/Infinite-List/InfiniteListContainer";
 import InsertionSort from "./pages/Insertion-Sort/Insertion-Sort";
 import MemoryGame from "./pages/MemoryGame/MemoryGame";
 import NestedComment from "./pages/NestedComment/NestedComment";
+import SignUpFormContainer from "./pages/SignUpForm/SignUpFormContainer";
 import TableDemo from "./pages/Tables/TableDemo";
 import { DemoVirtualList } from "./pages/Virtaul-List/VirtualList";
 import DemoAccordian from "./pages/atoms/Accordian/Accordion";
@@ -31,6 +33,9 @@ const HomeRoute = () => {
         <Route path="/slider" element={<SliderDemo />} exact />
         <Route path="/toggle" element={<ToggleDemo />} exact />
         <Route path="/search" element={<SearchBoxContainerDemo />} exact />
+        <Route path="/tic-tac-toe" element={<TicTacToe />} exact />
+        <Route path="/sign-up" element={<SignUpFormContainer />} exact />
+
         <Route
           path="/infinite-list"
           element={<InfiniteListContainer />}

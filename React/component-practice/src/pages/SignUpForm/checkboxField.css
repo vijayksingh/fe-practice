@@ -1,0 +1,30 @@
+.checkbox-field {
+  position: relative;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-field input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.checkbox-field label {
+  font-weight: bold;
+}
+
+.checkbox-field.focused label {
+  color: #007bff; /* Highlight color for focused label */
+}
+
+.checkbox-field.visited label {
+  /* Optional styling for visited state */
+}
+
+.checkbox-field .error {
+  color: #e74c3c; /* Error color for error message */
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+}

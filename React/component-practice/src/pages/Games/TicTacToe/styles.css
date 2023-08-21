@@ -1,0 +1,49 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  width: 310px;
+  height: 310px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  font-size: 24px;
+  font-weight: bold;
+  color: gray;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 1px solid #675e5e;
+}
+
+.cell.selected {
+  background-color: #f0f0f0;
+}
+
+.cell:hover {
+  background-color: #f0f0f0;
+}
+
+.cell:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
